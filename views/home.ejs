@@ -1,0 +1,23 @@
+<%- include('partials/header'); -%>
+
+<h1>My Fitness Journey</h1>
+
+<p>
+    <%= ejsHomeDescription %> 
+</p>
+
+<% ejsLogContent.forEach(function(post){ %>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2> <%= post.title %> </h2>
+        </div>
+        <div class="panel-body">
+            <p> 
+                <a href="/posts/<%=post._id%>">Read Entry</a> 
+            </p>
+        </div>
+    </div>
+
+<% }) %>
+
+<%- include('partials/footer'); -%>
