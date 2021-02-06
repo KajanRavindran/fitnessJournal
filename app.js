@@ -84,7 +84,7 @@ app.post("/compose", function (req, res) {
 
 
   if ((newPost.title.trim().length !== 0) && (newPost.body.trim().length !== 0)) {
-    newPost.save(function(err){
+    newPost.save(function (err) {
       if (!err) {
         res.redirect("/");
       }
@@ -97,12 +97,14 @@ app.get('/posts/:postID', function (req, res) {
 
   const requestID = req.params.postID;
 
-  Post.findOne({_id: requestID}, function(err, post){
-      res.render("post", {
-        ejsTitle: post.title,
-        ejsBody: post.body,
-        ejsID: post._id
-      })
+  Post.findOne({
+    _id: requestID
+  }, function (err, post) {
+    res.render("post", {
+      ejsTitle: post.title,
+      ejsBody: post.body,
+      ejsID: post._id
+    })
   });
 })
 
@@ -111,7 +113,9 @@ app.post('/del/:postID', function (req, res) {
 
   const postID = req.params.postID;
 
-  Post.deleteOne({_id:postID},function(err){
+  Post.deleteOne({
+    _id: postID
+  }, function (err) {
     res.redirect("/");
   })
 })
