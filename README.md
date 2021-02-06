@@ -1,7 +1,9 @@
 # Fitness Journal Web App
 
 Created By: Kajan Ravindran (100608620)
+
 Course Code: SOFE 4360: Cloud Computing (Winter 2021)
+
 Instructor: Dr. Q. Mahmoud
 
 ### Application Description
