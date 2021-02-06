@@ -10,7 +10,7 @@ const homeDescriptionContent = "Lacking the motivation to get back into the gym?
 const app = express();
 
 //DB Connection
-mongoose.connect("mongodb://localhost:27017/dearDiaryDB", {
+mongoose.connect("mongodb://localhost:27017/fitnessJournalDB", {
   useNewUrlParser: true
 }, {
   useUnifiedTopology: true
@@ -28,13 +28,13 @@ const Post = mongoose.model("Post", postsSchema);
 
 //Default DB enteries
 const post1 = new Post({
-  title: "Welcome to your journal",
-  body: "This is only the start of what you can acomplish if you set your mind to it. Write about how you felt today. It'll give you a great way to look back and realize how far you've come."
+  title: "Welcome to your journal!",
+  body: "<p>Staying on track with your workouts and nutrition can be challenging for a variety of reasons- and if you’re having trouble seeing the results you want, a change may be in order! Everyone knows when you start a new fitness regimen, week one starts and you’re stoked to plan your workouts, meal prep, and write down every move you make towards the change you want to see. But come week two, three, four, you start telling yourself the gym was too crowded, you’re too tired to cook, or you’ll get back on track tomorrow.</p><p>Before the excuses start piling up, keep yourself accountable and track your progress with a fitness journal! Whether you’re training for a marathon, on a weight loss journey, or simply trying to keep track of your workouts, there are plenty of benefits of keeping a fitness journal. But what does tracking your fitness journey entail? What are the best ways to keep a fitness journal? Are there any alternatives? Find out here!</p>"
 });
 
 const post2 = new Post({
-  title: "I'm still keeping it up",
-  body: "I didn't stop refelcting today. In the famous words of Henry David Thoreau: Success usually comes to those who are too busy to be looking for it.’"
+  title: "Keep it up! Can't stop before you start!",
+  body: "<h3>Accountability</h3><p>Writing down your activity and your nutrition is a great way to keep yourself accountable to your goals. It helps you stay honest with yourself about whether you’re sticking to a fitness or diet plan, and allows you to keep track of what works for you and what doesn’t.</p><p>For example, if you try a workout class early in the morning or a recipe that you didn’t enjoy, making a note of it will remind you that there are better options for you to try. This will help you refine your lifestyle and be able to make healthy and productive choices.</p><h3>Keeps You Focused and Motivated</h3><p>One of the reasons you may have had trouble seeing desired results in the past is due to a lack of tracking your progress. It can be easy to give up too soon when you don’t see the fruits of your labor right away- but a journal can keep you focused on your goal. It helps keep you motivated and in tune with what you need to move forward.</p>"
 });
 
 const defaultPosts = [post1, post2];

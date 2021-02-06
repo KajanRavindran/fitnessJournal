@@ -2,22 +2,29 @@
 
 <h1>My Fitness Journey</h1>
 
-<p>
-    <%= ejsHomeDescription %> 
-</p>
+<h4>
+    <%= ejsHomeDescription %>
+</h4>
 
-<% ejsLogContent.forEach(function(post){ %>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h2> <%= post.title %> </h2>
-        </div>
-        <div class="panel-body">
-            <p> 
-                <a href="/posts/<%=post._id%>">Read Entry</a> 
-            </p>
-        </div>
+<div class="row">
+    <div class="col-md-2">
     </div>
-
-<% }) %>
+    <div class="col-md-10">
+        <% ejsLogContent.forEach(function(post){ %>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2> <%= post.title %> </h2>
+            </div>
+            <div class="panel-body">
+                <p>
+                    <a href="/posts/<%=post._id%>">Read Entry</a>
+                </p>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
 
 <%- include('partials/footer'); -%>
