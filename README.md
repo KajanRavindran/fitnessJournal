@@ -17,7 +17,7 @@ The application uses:
 
 The 3 client side services included in the application are:
 1. **Querying** from the MongoDB database to retrieve all journal entries when on the home page.
-2. When selecting the **compose** page, user is able to add a title, and include formatted text (achieved using the TinyMCE API). When publish is clicked, post is saved to the database and user is taken back to the home page where the new post is displayed along with all past enteries.
+2. When selecting the **compose** page, user is able to add a title, and include formatted text (achieved using the TinyMCE API). When publish is clicked, post is saved to the database and user is taken back to the home page where the new post is displayed along with all past entries.
 3. When the **read entry** button is selected, user is taken to the full post the published earlier. Here they have the option to delete if they so choose to.
 
 ### Cloud Host
