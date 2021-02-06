@@ -75,6 +75,7 @@ app.get("/compose", function (req, res) {
   res.render("compose", {})
 })
 
+//Composes new entry while preventing blank enteries
 app.post("/compose", function (req, res) {
 
   const newPost = new Post({
