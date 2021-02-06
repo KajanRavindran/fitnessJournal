@@ -7,7 +7,7 @@ Instructor: Dr. Q. Mahmoud
 ### Application Description
 A simple application to demonstrate the ability to use cloud technologies to deploy web applications.
 
-With everyone being stuck at home, and working out becoming more of a challenge, I decided to make a simple workout journal web application. As there were no additional marks given for user authentication and that was ommited in my implimentation. 
+With everyone being stuck at home, and working out becoming more of a challenge, I decided to make a simple workout journal web application. As there were no additional marks given for user authentication and that was omitted in my implementation.
 
 The application uses:
 * MongoDB = Database
