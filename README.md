@@ -1,10 +1,10 @@
-#Fitness Journal Web App
+# Fitness Journal Web App
 
 Created By: Kajan Ravindran (100608620)
 Course Code: SOFE 4360: Cloud Computing (Winter 2021)
 Instructor: Dr. Q. Mahmoud
 
-###Application Description
+### Application Description
 A simple application to demonstrate the ability to use cloud technologies to deploy web applications.
 
 With everyone being stuck at home, and working out becoming more of a challenge, I decided to make a simple workout journal web application. As there were no additional marks given for user authentication and that was ommited in my implimentation. 
