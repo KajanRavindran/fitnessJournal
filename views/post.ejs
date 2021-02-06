@@ -1,14 +1,15 @@
 <%- include('partials/header'); -%>
 
-
+<!-- title -->
 <h1>
     <%= ejsTitle %> 
 </h1>
 
-<!-- <p> -->
+<!-- Body Text -->
 <%- ejsBody %>
-<!-- </p> -->
 
+
+<!-- Delete Button -->
 <form id="delPost" class="delBtn" action="/del/<%= ejsID %>" method="post">
     <button form="delPost" class="btn btn-secondary btn-danger" type="submit">
         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
