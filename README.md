@@ -21,4 +21,4 @@ The 3 client side services included in the application are:
 3. When the **read entry** button is selected, user is taken to the full post the published earlier. Here they have the option to delete if they so choose to.
 
 ### Cloud Host
-The live version of the application is running on a AWS ec2 instance at the address http://18.219.63.207:3000/
+The live version of the application is running on a AWS ec2 instance at the address http://ec2-18-219-63-207.us-east-2.compute.amazonaws.com:3000/
