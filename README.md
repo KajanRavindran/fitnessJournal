@@ -16,9 +16,9 @@ The application uses:
 * HTML/CSS = Front-end
 
 The 3 client side services included in the application are:
-1. **Querying** from the MongoDB database to retrieve all journal entries when on the home page.
-2. When selecting the **compose** page, user is able to add a title, and include formatted text (achieved using the TinyMCE API). When publish is clicked, post is saved to the database and user is taken back to the home page where the new post is displayed along with all past entries.
-3. When the **read entry** button is selected, user is taken to the full post the published earlier. Here they have the option to delete if they so choose to.
+1. Querying from the MongoDB database to retrieve all journal entries when on the home page.
+2. When selecting the compose page, user is able to add a title, and include formatted text (achieved using the TinyMCE API). When publish is clicked, post is saved to the database and user is taken back to the home page where the new post is displayed along with all past entries.
+3. When the read entry button is selected, user is taken to the full post the published earlier. Here they have the option to delete if they so choose to.
 
 ### Cloud Host
 The live version of the application is running on a AWS ec2 instance at the address http://ec2-18-219-63-207.us-east-2.compute.amazonaws.com:3000/
